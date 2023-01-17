@@ -1,8 +1,12 @@
 import React from 'react'
+import { Header } from '../../components'
 
 const HotelsList = () => {
   return (
-    <div>HotelsList</div>
+    <div>
+<Header type={'hotelList'}/>
+
+    </div>
   )
 }
 

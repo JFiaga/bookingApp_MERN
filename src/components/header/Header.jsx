@@ -11,7 +11,7 @@ import {
   AiOutlineLineChart,
 } from "react-icons/ai";
 
-const Header = () => {
+const Header = ({type}) => {
   const headerIconsValues = [
     { icon: FaBed, value: "stays" },
     { icon: FaFly, value: "flights" },
@@ -45,7 +45,7 @@ const Header = () => {
   const [optionsOn, setOptionsOn] = useState(false);
   return (
     <header
-  
+    className="header"
     > 
       <div className="icons__container">
         {headerIconsValues.map((item, index) => (
@@ -55,6 +55,9 @@ const Header = () => {
           </div>
         ))}
       </div>
+      {type != 'hotelList' &&
+      
+     <>
       <h1 className="header__title">Find your next stay</h1>
       <h2 className="header__subtitle">
         Search deals on hotels, homes, and much more...
@@ -78,8 +81,9 @@ const Header = () => {
           />
           {calenderOn && (
             <DateRange
-              editableDateInputs={false}
-              onChange={(item) => setDate([item.selection])}
+            
+            editableDateInputs={false}
+            onChange={(item) => setDate([item.selection])}
               moveRangeOnFirstSelection={false}
               ranges={date}
               className="datePicker"
@@ -90,13 +94,13 @@ const Header = () => {
         <div
           className="header__reservationBox--options"
           onClick={() => setOptionsOn(prev => !prev)}
-        >
+          >
           <AiFillTool />
           <div>{`${options.children} Childrens - ${options.adults} Adults - ${options.rooms} Rooms `}</div>
 
           <div
           onClick={(e) => e.stopPropagation()}
-            className={`reservationBox__options--btn ${optionsOn && "enabled"}`}
+          className={`reservationBox__options--btn ${optionsOn && "enabled"}`}
           >
        
             <div
@@ -121,7 +125,7 @@ const Header = () => {
                 <button
                   disabled={options.children === 0}
                   onClick={() => handleOptions("children", "d")}
-                >
+                  >
                   -
                 </button>
                 <span>{options.children}</span>
@@ -137,7 +141,7 @@ const Header = () => {
                 <button
                   disabled={options.rooms === 0}
                   onClick={() => handleOptions("rooms", "d")}
-                >
+                  >
                   -
                 </button>
                 <span>{options.rooms}</span>
@@ -146,7 +150,12 @@ const Header = () => {
             </div>
           </div>
         </div>
+
+        <button className="header__reservationBox--btn">Search</button>
       </div>
+     </>
+
+      }
     </header>
   );
 };

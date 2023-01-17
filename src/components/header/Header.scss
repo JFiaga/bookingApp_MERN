@@ -1,11 +1,11 @@
-header {
+.header {
     background: #003580;
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 20px 100px;
+    padding: 50px 100px;
     position: relative;
 }
 
@@ -29,6 +29,11 @@ header {
     padding: 10px 25px;
     cursor: pointer;
     font-size: 25px;
+    transition: all .4s ease-in-out;
+    &:hover{
+        background: #fff;
+        color: #003580;
+    }
 
 }
 
@@ -46,8 +51,8 @@ header {
 }
 
 .header__btn {
-    color: white;
-    background: #0162eb;
+    color: #003580;
+    background: white;
 
     outline: none;
     border: 1px solid transparent;
@@ -100,6 +105,7 @@ header {
 .header__reservationBox--calendar .datePicker {
     position: absolute;
     top: 120%;
+    z-index: 100;
 
 }
 
@@ -119,14 +125,14 @@ header {
         background: rgba(255, 252, 252, 0.991);
         transition: all .4s ease-in-out;
         display: none;
-     
 
-        &.enabled{
+
+        &.enabled {
             display: block;
-       
+
         }
     }
-    
+
     .options__btnBox {
         min-width: 200px;
         display: flex;
@@ -147,11 +153,27 @@ header {
     }
 }
 
-.close{
+.header__reservationBox--btn {
+    position: absolute; 
+    width: 300px;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
     position: absolute;
-    top: 90%;
-    left: 95%;
-    font-size: 30px;
-    color: red;
+    background: #003580;
+    padding:10px 5px;
+    border-radius: 3px;
     cursor: pointer;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+    font-weight: 500;
+
+
+    &:hover {
+        background: transparent;
+        border: 1px solid #003580;
+        color: #003580;
+
+    }
 }

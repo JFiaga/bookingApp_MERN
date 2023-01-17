@@ -1,8 +1,16 @@
 import React from 'react'
+import './Home.scss'
+import { Featured, Header, PropertyList } from '../../components'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    <Header/>
+    <div className='home'>
+<Featured/>
+<PropertyList/>
+    </div>
+    </>
   )
 }
 
