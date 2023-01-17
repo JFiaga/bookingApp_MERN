@@ -69,7 +69,7 @@ header {
 .header__reservationBox {
     display: flex;
     padding: 10px;
-    width: 60%;
+    width: 70%;
     height: 50px;
     border: 4px solid orange;
     position: absolute;
@@ -84,7 +84,8 @@ header {
 }
 
 .header__reservationBox--search,
-.header__reservationBox--calendar {
+.header__reservationBox--calendar,
+.header__reservationBox--options {
     display: flex;
     margin: 0 5px 0;
     justify-content: center;
@@ -93,8 +94,8 @@ header {
     gap: 10px;
     border-right: 4px solid orange;
 
-   
 }
+
 
 .header__reservationBox--calendar .datePicker {
     position: absolute;
@@ -102,3 +103,55 @@ header {
 
 }
 
+.header__reservationBox--options {
+    border: none;
+    position: relative;
+
+    .reservationBox__options--btn {
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        gap: 10px;
+        position: absolute;
+        width: max-content;
+        padding: 20px;
+        box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.351);
+        background: rgba(255, 252, 252, 0.991);
+        transition: all .4s ease-in-out;
+        display: none;
+     
+
+        &.enabled{
+            display: block;
+       
+        }
+    }
+    
+    .options__btnBox {
+        min-width: 200px;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+
+        button {
+            padding: 5px;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all .4s ease-in-out;
+
+            &:hover {
+                background: #0162eb;
+                color: white;
+            }
+        }
+    }
+}
+
+.close{
+    position: absolute;
+    top: 90%;
+    left: 95%;
+    font-size: 30px;
+    color: red;
+    cursor: pointer;
+}
