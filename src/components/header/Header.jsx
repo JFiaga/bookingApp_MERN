@@ -6,7 +6,7 @@ import { DateRange } from "react-date-range";
 import { format } from "date-fns";
 import { FaBed, FaCalendar, FaCar, FaFly, FaTaxi } from "react-icons/fa";
 import {
-  AiFillCloseCircle,
+
   AiFillTool,
   AiOutlineLineChart,
 } from "react-icons/ai";
@@ -55,7 +55,7 @@ const Header = ({type}) => {
           </div>
         ))}
       </div>
-      {type != 'hotelList' &&
+      {type !== 'hotelList' &&
       
      <>
       <h1 className="header__title">Find your next stay</h1>

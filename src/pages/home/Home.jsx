@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.scss'
-import { Featured, Header, PropertyList } from '../../components'
+import { Featured, FeaturedProperties, Header, PropertyList } from '../../components'
 
 const Home = () => {
   return (
@@ -9,6 +9,7 @@ const Home = () => {
     <div className='home'>
 <Featured/>
 <PropertyList/>
+<FeaturedProperties/>
     </div>
     </>
   )
