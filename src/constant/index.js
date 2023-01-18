@@ -81,3 +81,4 @@ export const featuredPropertiesListDataArr = [
     note: 9,
   },
 ];
+

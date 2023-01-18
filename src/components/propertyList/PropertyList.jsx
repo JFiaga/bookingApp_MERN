@@ -14,7 +14,9 @@ const PropertyList = () => {
            
            {propertiesListDataArr.map((property, index) => (
 
-             <div className="propertyList__cardContainer--card">
+             <div 
+             key={index}
+             className="propertyList__cardContainer--card">
                     <div className='card__img'>
                       <img src={property.imgLink} alt="" />
                     </div>
