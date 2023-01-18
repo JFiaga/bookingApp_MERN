@@ -5,11 +5,13 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 50px;
+    max-width: 1400px;
+
 
     &__title {
         font-size: 30px;
         font-weight: 600;
-     
+
         margin: 20px 20px;
         text-align: center;
     }
@@ -20,13 +22,12 @@
 
     border-radius: 5px;
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
-
     flex-wrap: wrap;
     gap: 20px;
-
-
+    
 
     .propertyList__cardContainer--card {
 
@@ -40,8 +41,8 @@
         cursor: pointer;
         background: rgb(255, 255, 255);
         box-shadow: 5px 1px 15px -1px rgba(0, 0, 0, 0.582);
-
-
+        
+       
         .card__img {
             height: 80%;
             width: 100%;

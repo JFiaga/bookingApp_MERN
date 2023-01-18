@@ -2,6 +2,7 @@
     background: #003580;
     flex-wrap: wrap;
     display: flex;
+    width: 100vw;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -105,7 +106,7 @@
 
 .header__reservationBox--calendar .datePicker {
     position: absolute;
-    top: 120%;
+    bottom: 120%;
     z-index: 1000;
 
 }
@@ -161,7 +162,6 @@
     left: 50%;
     transform: translate(-50%);
     color: white;
-    position: absolute;
     background: #003580;
     padding:10px 5px;
     border-radius: 3px;

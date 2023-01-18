@@ -12,24 +12,32 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <div className="footer__linksContainer">
+      <div className="footer__linksContainer"> 
         {footerArr.map((link, index) => (
-          <span key={index} className="footer__linksContainer--link">{link}</span>
+          <span key={index} className="footer__linksContainer--link">
+            {link}
+          </span>
         ))}
       </div>{" "}
       <div className="footer__linksContainer">
         {footerArr.map((link, index) => (
-          <span key={index} className="footer__linksContainer--link">{link}</span>
+          <span key={index} className="footer__linksContainer--link">
+            {link}
+          </span>
         ))}
       </div>{" "}
       <div className="footer__linksContainer">
         {footerArr.map((link, index) => (
-          <span key={index} className="footer__linksContainer--link">{link}</span>
+          <span key={index} className="footer__linksContainer--link">
+            {link}
+          </span>
         ))}
       </div>{" "}
       <div className="footer__linksContainer">
         {footerArr.map((link, index) => (
-          <span key={index} className="footer__linksContainer--link">{link}</span>
+          <span key={index} className="footer__linksContainer--link">
+            {link}
+          </span>
         ))}
       </div>
     </footer>

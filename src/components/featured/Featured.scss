@@ -2,6 +2,7 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+    max-width: 1400px;
     margin-top: 250px;
 }
 
@@ -11,14 +12,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
+    width: 100%;
 
 
     .featured__cardContainer--card {
         position: relative;
         width: 90%;
-        max-width: 500px;
+        max-width: 400px;
         height: 400px;
         overflow: hidden;
         border-radius: 10px;
