@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.scss'
 
-const Email = () => {
+const Contact = () => {
   return (
     <div className='contact'> 
             <h3 className="contact__title">
@@ -19,4 +19,4 @@ const Email = () => {
   )
 }
 
-export default Email 
+export default Contact 

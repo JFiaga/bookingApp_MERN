@@ -1,6 +1,8 @@
-import { Header } from "../../components";
+import { Footer, Header, Contact } from "../../components";
 import { CiLocationOn } from "react-icons/ci";
+import { hotelsDetailImgArr } from "../../constant";
 import "./Hotels.scss";
+
 
 const Hotels = () => {
   return (
@@ -11,7 +13,8 @@ const Hotels = () => {
           <div>
             <h2>Grand Hotel</h2>
             <span>
-              <CiLocationOn /> {""} Elton St 125 New York{" "}
+              <CiLocationOn />  Elton St 125 New York
+
             </span>
             <span>Excellent location - 500m from center</span>
             <span>
@@ -23,15 +26,22 @@ const Hotels = () => {
         </div>
 
         <div className="hotelsPage__imgContainer">
-          <div className="hotelsPage__imgContainer--imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1659884700210-5d00b9656511?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1117&q=80"
-              alt=""
-            />
-          </div>{" "}
+        {hotelsDetailImgArr.map((imgSrc, index)=> (
 
+          <div
+          key={index}
+          className="hotelsPage__imgContainer--imgBox">
+            <img
+              src={imgSrc.imgSrc}
+              alt=""
+              />
+          </div>
+              ))}
         </div>
       </div>
+
+        <Contact/>
+        <Footer/>
     </>
   );
 };
