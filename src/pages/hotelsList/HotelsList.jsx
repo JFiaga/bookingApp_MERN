@@ -1,9 +1,9 @@
+import  { useState } from "react";
 import { format } from "date-fns";
-import React, { useState } from "react";
 import { DateRange } from "react-date-range";
 
 import { useLocation } from "react-router-dom";
-import { Header } from "../../components";
+import { Header, HotelsListResults } from "../../components";
 import "./HotelList.scss";
 
 const HotelsList = () => {
@@ -102,7 +102,18 @@ const HotelsList = () => {
         </div>
 
         {/* Results */}
-        <div className="hotelList__container--results">result</div>
+        <div className="hotelList__container--results">
+          <HotelsListResults/>
+          <HotelsListResults/>
+          <HotelsListResults/>
+          <HotelsListResults/>
+          <HotelsListResults/>
+          <HotelsListResults/>
+          <HotelsListResults/>
+          <HotelsListResults/>
+          <HotelsListResults/>
+          <HotelsListResults/>
+        </div>
       </div>
     </>
   );

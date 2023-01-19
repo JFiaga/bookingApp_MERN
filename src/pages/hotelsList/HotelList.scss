@@ -1,48 +1,55 @@
-.hotelList{
+.hotelList {
     display: flex;
     width: 100vw;
-    height: auto;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     position: relative;
 }
 
-.hotelList__container{
-    
-    margin-top:100px ;
+.hotelList__container {
+
+
+    margin-top: 100px;
     display: flex;
     padding: 0 50px;
     gap: 20px;
-   
+
+
+
 
 }
-.hotelList__container--searchBox{
-    flex:1 ;
+
+.hotelList__container--searchBox {
+    height: fit-content;
+    flex: 1;
     position: sticky;
+    top: 0;
     border-radius: 10px;
     background: rgb(255, 140, 0);
     padding: 20px;
 
 
-    .search{
+    .search {
         font-size: 25px;
         text-transform: capitalize;
         font-weight: 600;
 
     }
-    .searchBox__destination, .searchBox__date{
-        // display: flex;
-        // flex-direction: column;
 
+    .searchBox__destination,
+    .searchBox__date {
         position: relative;
         overflow: hidden;
         margin: 10px 0;
-        label{
+
+        label {
             font-size: 19px;
             font-weight: 500;
-            
+
         }
-        span, input{
+
+        span,
+        input {
             cursor: pointer;
             display: block;
             padding: 5px 10px;
@@ -52,36 +59,40 @@
 
             border-radius: 5px;
         }
-        .datePicker{
-           display: block;
-           margin: 0 auto;
-          
+
+        .datePicker {
+            display: block;
+            margin: 0 auto;
+
         }
-    
+
     }
 
-   
-    .searchBox__options{
+
+    .searchBox__options {
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 5px;
         margin-top: 50px;
-        span{
+
+        span {
             font-size: 19px;
-            font-weight: 500; 
+            font-weight: 500;
         }
-        div{
+
+        div {
             display: flex;
             justify-content: space-between;
             align-items: center;
 
-            label{
+            label {
                 text-transform: capitalize;
             }
-            input{
+
+            input {
                 width: 100px;
-                padding:10px;
+                padding: 10px;
                 border-radius: 5px;
                 outline: none;
                 border: none;
@@ -90,33 +101,38 @@
     }
 
 
-.searchBox__btn {
- 
-    width: 300px;
-    display: block;
-    color: white;
-    background: #003580;
-    padding:10px 5px;
-    border-radius: 3px;
-    cursor: pointer;
-    border: 1px solid transparent;
-    transition: all .3s ease;
-    font-weight: 500;
-    margin: 20px auto;
-   
+    .searchBox__btn {
+
+        width: 300px;
+        display: block;
+        color: white;
+        background: #003580;
+        padding: 10px 5px;
+        border-radius: 3px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        transition: all .3s ease;
+        font-weight: 500;
+        margin: 20px auto;
 
 
-    &:hover {
-        background: transparent;
-        border: 1px solid #003580;
-        color: #003580;
+
+        &:hover {
+            background: transparent;
+            border: 1px solid #003580;
+            color: #003580;
+
+        }
 
     }
-
-}
 }
 
-.hotelList__container--results{
+.hotelList__container--results {
     flex: 3;
-    background: blue;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+
 }
