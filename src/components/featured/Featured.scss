@@ -2,22 +2,24 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    max-width: 1400px;
+
     margin-top: 250px;
 }
 
 .featured__cardContainer {
-
+    
+    max-width: 1300px;
     border-radius: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    width: 100%;
+    width:max-content;
 
 
     .featured__cardContainer--card {
+
         position: relative;
         width: 90%;
         max-width: 400px;

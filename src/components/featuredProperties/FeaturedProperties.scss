@@ -1,17 +1,16 @@
 .featuredProperties {
     width: 100vw;
-    // max-width: 1624px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 50px;
     max-width: 1400px;
 
 
     &__title {
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 600;
-
         margin: 20px 20px;
         text-align: center;
     }
@@ -19,12 +18,11 @@
 
 
 .featuredProperties__cardContainer {
-
+    max-width: 1300px;
     border-radius: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-
     flex-wrap: wrap;
     gap: 20px;
 
