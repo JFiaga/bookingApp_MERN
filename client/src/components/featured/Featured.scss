@@ -2,7 +2,6 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-
     margin-top: 250px;
 }
 
@@ -69,4 +68,12 @@
     }
 
 
+}
+
+
+
+@media only screen and (max-width:1620px){
+    .featured {
+    margin-top: 310px;
+}
 }
