@@ -76,7 +76,7 @@ const Header = ({ type }) => {
 
           <div className="header__reservationBox">
             <div className="header__reservationBox--search">
-              <FaBed />
+              <FaBed  className="header__reservationBox--icon"/>
               <input
                 type="text"
                 placeholder="Where are you going ?"
@@ -84,7 +84,7 @@ const Header = ({ type }) => {
               />
             </div>
             <div className="header__reservationBox--calendar">
-              <FaCalendar />
+              <FaCalendar className="header__reservationBox--icon" />
 
               <input
                 defaultValue={`${format(
@@ -109,7 +109,7 @@ const Header = ({ type }) => {
               className="header__reservationBox--options"
               onClick={() => setOptionsOn((prev) => !prev)}
             >
-              <AiFillTool />
+              <AiFillTool className="header__reservationBox--icon" />
               <div>{`${options.childrens} Childrens - ${options.adults} Adults - ${options.rooms} Rooms `}</div>
 
               <div

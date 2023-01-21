@@ -1,20 +1,23 @@
 nav {
     background: #003580;
     height: 70px;
-    padding: 10px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: 10px 100px;
 
 }
+
+
+
+
 
 .logo {
     color: white;
     font-weight: bold;
     text-decoration: none;
     text-transform: capitalize;
-    font-size: 24px;
+    font-size: 34px;
 }
 
 .nav__btn {
@@ -39,6 +42,29 @@ nav {
             }
     }
 
-    
+}
 
+
+
+//Responsive
+
+@media only screen and (max-width: 720px) {
+    nav{
+        padding: 10px 20px;
+        gap: 10px;
+        .logo{
+            font-size:30px ;
+        }
+        .nav__btn{
+            button{
+                padding: 5px 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 520px) {
+
+        nav .logo{
+            font-size:20px ;
+        }
 }
