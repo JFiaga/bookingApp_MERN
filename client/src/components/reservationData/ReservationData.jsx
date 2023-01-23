@@ -150,12 +150,12 @@ const ReservationData = () => {
       </div>
     </div>
 
-    {/* <button
+    <button
       onClick={searchHandleClick}
       className="reservationBox--btn"
     >
       Search
-    </button> */}
+    </button>
   </div>
   )
 }

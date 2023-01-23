@@ -68,6 +68,28 @@
     z-index: 100;
 }
 
+.reservationBox--btn{
+    color: white;
+    background: #003580;
+
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    padding: 10px 10px;
+    text-align: center;
+    min-width: 120px;
+    text-transform: capitalize;
+
+    &:hover {
+        border: 1px solid #003580;
+        background: transparent;
+        color: #003580;
+
+    }
+
+}
 @media screen and (max-width:1300px) {
     .reservationBox{
         flex-direction: column;
