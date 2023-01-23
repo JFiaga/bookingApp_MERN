@@ -7,6 +7,7 @@ import {
   Footer,
   Header,
   PropertyList,
+  ReservationData,
 } from "../../components";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
     <>
       <Header />
       <div className="home">
+      <ReservationData/>
         <Featured />
         <PropertyList />
         <FeaturedProperties />

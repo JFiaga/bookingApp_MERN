@@ -19,42 +19,42 @@ const Header = ({ type }) => {
   ];
 
   //Destination state to use with navigate
-  const [destination, setDestination] = useState("");
+  // const [destination, setDestination] = useState("");
 
-  // Selecet the date and Calendar on/off
-  const [calenderOn, setCalenderOn] = useState(false);
-  const [date, setDate] = useState([
-    {
-      startDate: new Date(),
-      endDate: new Date(),
-      key: "selection",
-    },
-  ]);
+  // // Selecet the date and Calendar on/off
+  // const [calenderOn, setCalenderOn] = useState(false);
+  // const [date, setDate] = useState([
+  //   {
+  //     startDate: new Date(),
+  //     endDate: new Date(),
+  //     key: "selection",
+  //   },
+  // ]);
 
-  //For increase or decrease the numbers of options
-  const [options, setOptions] = useState({
-    adults: 0,
-    childrens: 0,
-    rooms: 0,
-  });
-  const handleOptions = (name, operations) => {
-    setOptions((prev) => {
-      return {
-        ...prev,
-        [name]: operations === "i" ? options[name] + 1 : options[name] - 1,
-      };
-    });
-  };
+  // //For increase or decrease the numbers of options
+  // const [options, setOptions] = useState({
+  //   adults: 0,
+  //   childrens: 0,
+  //   rooms: 0,
+  // });
+  // const handleOptions = (name, operations) => {
+  //   setOptions((prev) => {
+  //     return {
+  //       ...prev,
+  //       [name]: operations === "i" ? options[name] + 1 : options[name] - 1,
+  //     };
+  //   });
+  // };
 
-  //for print the option pannel
-  const [optionsOn, setOptionsOn] = useState(false);
+  // //for print the option pannel
+  // const [optionsOn, setOptionsOn] = useState(false);
 
-  //to redirect in the hotelList page with the options data
-  const navigate = useNavigate();
+  // //to redirect in the hotelList page with the options data
+  // const navigate = useNavigate();
 
-  const searchHandleClick = () => {
-    navigate("/hotelslist", { state: { destination, options, date } });
-  };
+  // const searchHandleClick = () => {
+  //   navigate("/hotelslist", { state: { destination, options, date } });
+  // };
 
   return (
     <header className="header">
@@ -74,7 +74,7 @@ const Header = ({ type }) => {
           </h2>
           <button className="header__btn">Sing in / Register</button>
 
-          <div className="header__reservationBox">
+          {/* <div className="header__reservationBox">
             <div className="header__reservationBox--search">
               <FaBed  className="header__reservationBox--icon"/>
               <input
@@ -83,11 +83,13 @@ const Header = ({ type }) => {
                 onChange={(e) => setDestination(e.target.value)}
               />
             </div>
+
+            
             <div className="header__reservationBox--calendar">
               <FaCalendar className="header__reservationBox--icon" />
 
               <input
-                defaultValue={`${format(
+                value={`${format(
                   date[0].startDate,
                   "MM/dd/yy"
                 )} - ${format(date[0].endDate, "MM/dd/yy")}`}
@@ -104,6 +106,8 @@ const Header = ({ type }) => {
                 />
               )}
             </div>
+
+
 
             <div
               className="header__reservationBox--options"
@@ -174,7 +178,7 @@ const Header = ({ type }) => {
             >
               Search
             </button>
-          </div>
+          </div> */}
         </>
       )}
     </header>

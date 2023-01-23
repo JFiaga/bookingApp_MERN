@@ -1,0 +1,75 @@
+.reservationBox{
+    box-shadow: 2px 3px 5px black;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 20px;
+}
+
+
+.reservationBox__search,
+.reservationBox__calendar,
+.reservationBox__options{
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+    gap: 10px;
+    font-weight:600;
+    color: black;
+    cursor: pointer;
+    input{
+        color: black;
+        border: none;
+        background: transparent;
+        outline: none;
+
+    }
+
+}
+
+
+.reservationBox__options--btn{
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .options__btnBox{
+        // background: #000;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        text-transform: capitalize;
+        padding: 20px 0;
+
+        &:hover{
+            color: #0264ed;
+        }
+    }
+}
+.reservationBox__options--btn.disabled{
+    display: none;
+}
+
+.datePicker{
+    position: absolute;
+    bottom: 100%;
+    z-index: 100;
+}
+
+@media screen and (max-width:1300px) {
+    .reservationBox{
+        flex-direction: column;
+    }
+}

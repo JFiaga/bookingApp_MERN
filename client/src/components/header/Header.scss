@@ -73,118 +73,118 @@
     }
 }
 
-.header__reservationBox {
-    display: flex;
-    padding: 10px;
-    width: 70%;
-    height: 50px;
-    border: 4px solid orange;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%);
+// .header__reservationBox {
+//     display: flex;
+//     padding: 10px;
+//     width: 70%;
+//     height: 50px;
+//     border: 4px solid orange;
+//     position: absolute;
+//     top: 100%;
+//     left: 50%;
+//     transform: translate(-50%);
 
-    input {
-        padding: 10px;
-        background: transparent;
-        outline: none;
-    }
+//     input {
+//         padding: 10px;
+//         background: transparent;
+//         outline: none;
+//     }
 
-}
+// }
 
-.header__reservationBox--search,
-.header__reservationBox--calendar,
-.header__reservationBox--options {
-    display: flex;
-    margin: 0 5px 0;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    gap: 10px;
-    border-right: 4px solid orange;
-    z-index: 100;
+// .header__reservationBox--search,
+// .header__reservationBox--calendar,
+// .header__reservationBox--options {
+//     display: flex;
+//     margin: 0 5px 0;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+//     gap: 10px;
+//     border-right: 4px solid orange;
+//     z-index: 100;
 
-}
-
-
-
-.header__reservationBox--calendar .datePicker {
-    position: absolute;
-    bottom: 120%;
-    z-index: 1000;
-
-}
-
-.header__reservationBox--options {
-    border: none;
-    position: relative;
-
-    .reservationBox__options--btn {
-        display: flex;
-        flex-direction: column;
-        bottom: 100%;
-        gap: 10px;
-        position: absolute;
-        width: max-content;
-        padding: 20px;
-        box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.351);
-        background: rgba(255, 252, 252, 0.991);
-        transition: all .4s ease-in-out;
-        display: none;
-
-        z-index: 1000;
+// }
 
 
-        &.enabled {
-            display: block;
 
-        }
-    }
+// .header__reservationBox--calendar .datePicker {
+//     position: absolute;
+//     bottom: 120%;
+//     z-index: 1000;
 
-    .options__btnBox {
-        min-width: 200px;
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
+// }
+
+// .header__reservationBox--options {
+//     border: none;
+//     position: relative;
+
+//     .reservationBox__options--btn {
+//         display: flex;
+//         flex-direction: column;
+//         bottom: 100%;
+//         gap: 10px;
+//         position: absolute;
+//         width: max-content;
+//         padding: 20px;
+//         box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.351);
+//         background: rgba(255, 252, 252, 0.991);
+//         transition: all .4s ease-in-out;
+//         display: none;
+
+//         z-index: 1000;
+
+
+//         &.enabled {
+//             display: block;
+
+//         }
+//     }
+
+//     .options__btnBox {
+//         min-width: 200px;
+//         display: flex;
+//         justify-content: space-between;
+//         gap: 10px;
      
-        button {
-            padding: 5px;
-            margin: 0 5px;
-            cursor: pointer;
-            transition: all .4s ease-in-out;
+//         button {
+//             padding: 5px;
+//             margin: 0 5px;
+//             cursor: pointer;
+//             transition: all .4s ease-in-out;
 
-            &:hover {
-                background: #0162eb;
-                color: white;
-            }
-        }
-    }
-}
+//             &:hover {
+//                 background: #0162eb;
+//                 color: white;
+//             }
+//         }
+//     }
+// }
 
-.header__reservationBox--btn {
-    position: absolute;
-    width: 300px;
-    top: 120%;
-    left: 50%;
-    transform: translate(-50%);
-    color: white;
-    background: #003580;
-    padding: 10px 5px;
-    border-radius: 3px;
-    cursor: pointer;
-    border: 1px solid transparent;
-    transition: all .3s ease;
-    font-weight: 500;
+// .header__reservationBox--btn {
+//     position: absolute;
+//     width: 300px;
+//     top: 120%;
+//     left: 50%;
+//     transform: translate(-50%);
+//     color: white;
+//     background: #003580;
+//     padding: 10px 5px;
+//     border-radius: 3px;
+//     cursor: pointer;
+//     border: 1px solid transparent;
+//     transition: all .3s ease;
+//     font-weight: 500;
     
 
 
-    &:hover {
-        background: transparent;
-        border: 1px solid #003580;
-        color: #003580;
+//     &:hover {
+//         background: transparent;
+//         border: 1px solid #003580;
+//         color: #003580;
 
-    }
-}
+//     }
+// }
 
 
 //Responsive
@@ -219,9 +219,6 @@
         margin-bottom: 20px;
     }
 
-
-  
-
 }
 
 @media only screen and (max-width:1300px) and (min-width: 720px) {
@@ -236,45 +233,45 @@
     }
 }
 
-@media only screen and (max-width:1620px)  {
+// @media only screen and (max-width:1620px)  {
 
-    .header__reservationBox {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        height: auto;
-        width: 100vw;
-        max-width: 700px;
-        left: 45%;
-        transform: translate(-50%);
-        border: none;
-    }
+//     .header__reservationBox {
+//         flex-direction: column;
+//         align-items: flex-start;
+//         gap: 10px;
+//         height: auto;
+//         width: 100vw;
+//         max-width: 700px;
+//         left: 45%;
+//         transform: translate(-50%);
+//         border: none;
+//     }
 
-    .header__reservationBox--icon {
-        color: #003580;
-    }
+//     .header__reservationBox--icon {
+//         color: #003580;
+//     }
 
-    .header__reservationBox--search,
-    .header__reservationBox--calendar,
-    .header__reservationBox--options {
-        border-right: none;
-        height: 40px;
-        width: 100%;
-        padding: 10px 20px;
-        background: rgba(0, 0, 0, 0.155);
-    }
+//     .header__reservationBox--search,
+//     .header__reservationBox--calendar,
+//     .header__reservationBox--options {
+//         border-right: none;
+//         height: 40px;
+//         width: 100%;
+//         padding: 10px 20px;
+//         background: rgba(0, 0, 0, 0.155);
+//     }
 
-    .header__reservationBox--options div {
-        transform: translate(-10%);
-    }
+//     .header__reservationBox--options div {
+//         transform: translate(-10%);
+//     }
 
-    .header__reservationBox--options .header__reservationBox--icon {
-        transform: translate(-180%);
-    }
-    .header__reservationBox--btn {
-        top: 100%;
+//     .header__reservationBox--options .header__reservationBox--icon {
+//         transform: translate(-180%);
+//     }
+//     .header__reservationBox--btn {
+//         top: 100%;
 
-    }
+//     }
 
-}
+// }
 
