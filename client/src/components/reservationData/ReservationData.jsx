@@ -91,7 +91,7 @@ const ReservationData = () => {
       className="reservationBox__options"
       onClick={() => setOptionsOn((prev) => !prev)}
     >
-      <AiFillTool className="reservationBox--icon" />
+      <AiFillTool className="" />
       <div>{`${options.childrens} Childrens - ${options.adults} Adults - ${options.rooms} Rooms `}</div>
 
       <div

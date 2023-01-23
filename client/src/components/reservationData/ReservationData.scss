@@ -8,7 +8,6 @@
     gap: 20px;
 }
 
-
 .reservationBox__search,
 .reservationBox__calendar,
 .reservationBox__options{
@@ -29,9 +28,10 @@
         border: none;
         background: transparent;
         outline: none;
-
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
     }
-
 }
 
 
@@ -46,7 +46,6 @@
     align-items: center;
 
     .options__btnBox{
-        // background: #000;
         width: 90%;
         display: flex;
         justify-content: space-between;
