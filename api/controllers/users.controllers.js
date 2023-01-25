@@ -8,7 +8,7 @@ export const updateUser = async (req, res) => {
       { $set: req.body },
       { new: true }
     );
-    res.status(200).json(updateUser); 
+    res.status(200).json(updateUser);
   } catch (error) {
     next(error);
   }
@@ -23,8 +23,7 @@ export const deleteUser = async (req, res, next) => {
 };
 
 export const getUser = async (req, res, next) => {
-  // const failed = true
-  //   if(failed) return next(errorMessage('401', 'Not authenticated'))
+
   try {
     const getUser = await User.findById(req.params.id);
     res.status(200).send("userList");

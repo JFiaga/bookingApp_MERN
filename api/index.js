@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGO, {
 }).then(()=> console.log('connected to atlas')).catch(err => console.log(err))
 
 app.get('/', (req, res)=> {
-    res.send('hello first request') 
+    res.send('hello first request')
 })
 
 mongoose.connection.on("disconnected", ()=> {
@@ -36,7 +36,7 @@ mongoose.connection.on("connected", ()=> {
     console.log('mongodb is conneceted')
 })
 
-// Middleware 
+// Middleware
 app.use(cookieParser())
 app.use(express.json())
 
