@@ -1,11 +1,20 @@
-import express from "express"
-
-const router = express.Router()
-
-
-router.get('/', (req, res) => {
-    res.send('hello, this is users page ')
-})
+import express from "express";
+import {  deleteUser, getAllUsers, getUser, updateUser} from "../controllers/index.js";
+const router = express.Router();
 
 
-export default router
+//UPDATE
+
+router.put("/:id",updateUser);
+
+//DELETE
+router.delete('/:id',deleteUser)
+
+//GET
+router.get('/:id', getUser)
+
+//GET ALL
+
+router.get('/', getAllUsers)
+
+export default router;

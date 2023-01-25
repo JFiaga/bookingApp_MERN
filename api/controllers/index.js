@@ -9,3 +9,12 @@ export {getAllHotels} from './hotels.controllers.js'
 //Auth controllers
 
 export {register} from './auth.controllers.js'
+export {login} from './auth.controllers.js'
+
+
+//User Controllers
+
+export {updateUser} from './users.controllers.js'
+export {deleteUser} from './users.controllers.js'
+export {getUser} from './users.controllers.js'
+export {getAllUsers} from './users.controllers.js'

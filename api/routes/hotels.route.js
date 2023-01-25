@@ -1,6 +1,5 @@
 import express from "express";
 import { createHotel, deleteHotel, getAllHotels, getHotel, updateHotel} from "../controllers/index.js";
-import { errorMessage } from "../utils/errorMessage.js";
 const router = express.Router();
 
 //CREATE

@@ -5,19 +5,19 @@ import authRoute from './routes/auth.route.js'
 import hotelsRoute from './routes/hotels.route.js'
 import usersRoute from './routes/users.route.js'
 import roomsRoute from './routes/rooms.route.js'
+import cookieParser from 'cookie-parser'
 
 dotenv.config()
 
 const app = express()
-app.use(express.json())
 
 // const connect = async () => {
-//     try {
+    //     try {
 //         await mongoose.connect(process.env.mongo)
 //         useNe
 //     } catch (error) {
-//         throw error
-//     }
+    //         throw error
+    //     }
 // }
 mongoose.connect(process.env.MONGO, {
     useNewUrlParser:true,
@@ -37,6 +37,9 @@ mongoose.connection.on("connected", ()=> {
 })
 
 // Middleware 
+app.use(cookieParser())
+app.use(express.json())
+
 
 app.use('/api/auth', authRoute)
 app.use('/api/hotels', hotelsRoute)
