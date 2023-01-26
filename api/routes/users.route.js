@@ -4,7 +4,7 @@ import {
   getAllUsers,
   getUser,
   updateUser,
-} from "../controllers/index.js";
+} from "../controllers/users.controllers.js";
 import { errorMessage } from "../utils/errorMessage.js";
 import { checkAdmin, checkToken, checkUser } from "../utils/verifyTokens.js";
 const router = express.Router();
