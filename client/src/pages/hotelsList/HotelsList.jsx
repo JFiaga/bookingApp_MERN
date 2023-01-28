@@ -36,7 +36,7 @@ const HotelsList = () => {
 
   <div className="searchBox__date">
     <label htmlFor="destination">Check-in-date</label>
-    <span onClick={() => setCalenderOn((prev) => !prev)}>
+    <span onClick={() => setCalenderOn(prev => !prev)}>
       {`${format(date[0].startDate, "MM/dd/yy")} to ${format(
         date[0].endDate,
         "MM/dd/yy"
